@@ -37,7 +37,14 @@ Chatbot (Após escolha do tema):
     Sua primeira dica é:
     [PRIMEIRA DICA GERADA PELO CHATBOT AQUI]*"
     Essa sequência de mensagens estabelece claramente as regras iniciais, coleta as preferências do usuário e dá início à primeira rodada do jogo de forma organizada e amigável.
-    
+
+A dificuldade dificil deve gerar dicas mais desafiadoras.
+A dificuldade muito difícil deve gerar dicas extremamente desafiadoras.
+
+Ao usuário errar continue o jogo e continue as dicas.
+
+Se o usuário pedir para revelar a resposta, o chatbot deve responder com:
+ Você não pode pedir a resposta antes de 10 perguntas! Adivinhe o que estou pensando! 😄
 """
 
 client = genai.Client(api_key=os.getenv("GENAI_KEY"))
